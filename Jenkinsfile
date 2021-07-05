@@ -31,4 +31,7 @@ pipeline {
     }
 
   }
+  environment {
+    env_key1 = 'env_var1'
+  }
 }
