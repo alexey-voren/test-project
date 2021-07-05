@@ -33,5 +33,6 @@ pipeline {
   }
   environment {
     env_key1 = 'env_var1'
+    more_env_keys = 'more_env_vars'
   }
 }
