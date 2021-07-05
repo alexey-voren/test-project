@@ -7,9 +7,20 @@ pipeline {
       }
     }
 
-    stage('Test') {
-      steps {
-        echo 'Test message'
+    stage('Test1') {
+      parallel {
+        stage('Test1') {
+          steps {
+            echo 'Test message 1'
+          }
+        }
+
+        stage('Test2') {
+          steps {
+            echo 'Test message 2'
+          }
+        }
+
       }
     }
 
